@@ -10,7 +10,7 @@ describe('GET - /', async () => {
         const response = await request(app).get('/')
 
         // check the HTTP status code
-        expect(response.statusCode).to.equal(403)
+        expect(response.statusCode).to.equal(200)
         // check the raw text returned
         expect(response.text).to.equal('not sure what happened')
     })
